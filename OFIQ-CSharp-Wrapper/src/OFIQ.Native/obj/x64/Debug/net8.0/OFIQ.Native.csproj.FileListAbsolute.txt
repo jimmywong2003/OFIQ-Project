@@ -1,0 +1,14 @@
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\bin\x64\Debug\net8.0\OFIQ.Native.deps.json
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\bin\x64\Debug\net8.0\OFIQ.Native.dll
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\bin\x64\Debug\net8.0\OFIQ.Native.pdb
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\bin\x64\Debug\net8.0\OFIQ.Native.xml
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.AssemblyInfoInputs.cache
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.AssemblyInfo.cs
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.csproj.CoreCompileInputs.cache
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.sourcelink.json
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.dll
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\refint\OFIQ.Native.dll
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.xml
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\OFIQ.Native.pdb
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Native\obj\x64\Debug\net8.0\ref\OFIQ.Native.dll

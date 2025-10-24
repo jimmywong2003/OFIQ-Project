@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\git\\UareUFacialModule\\OFIQ-Project\\OFIQ-CSharp-Wrapper\\src\\OFIQ.Native\\OFIQ.Native.csproj": {}
+  },
+  "projects": {
+    "C:\\git\\UareUFacialModule\\OFIQ-Project\\OFIQ-CSharp-Wrapper\\src\\OFIQ.Native\\OFIQ.Native.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\UareUFacialModule\\OFIQ-Project\\OFIQ-CSharp-Wrapper\\src\\OFIQ.Native\\OFIQ.Native.csproj",
+        "projectName": "OFIQ.Native",
+        "projectPath": "C:\\git\\UareUFacialModule\\OFIQ-Project\\OFIQ-CSharp-Wrapper\\src\\OFIQ.Native\\OFIQ.Native.csproj",
+        "packagesPath": "C:\\Users\\jiwong\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\UareUFacialModule\\OFIQ-Project\\OFIQ-CSharp-Wrapper\\src\\OFIQ.Native\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jiwong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

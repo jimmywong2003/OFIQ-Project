@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kNbKPkwQT40=",
+  "success": true,
+  "projectFilePath": "C:\\git\\UareUFacialModule\\OFIQ-Project\\OFIQ-CSharp-Wrapper\\samples\\OFIQ.Samples.Console\\OFIQ.Samples.Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jiwong\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\jiwong\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512",
+    "C:\\Users\\jiwong\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\jiwong\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

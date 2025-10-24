@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OFIQ</name>
+    </assembly>
+    <members>
+        <member name="T:OFIQ.OFIQEngine">
+            <summary>
+            Main entry point for the OFIQ facial image quality assessment library.
+            </summary>
+        </member>
+        <member name="M:OFIQ.OFIQEngine.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.OFIQEngine"/> class.
+            </summary>
+        </member>
+        <member name="M:OFIQ.OFIQEngine.Initialize(System.String,System.String)">
+            <summary>
+            Initializes the OFIQ engine with the specified configuration.
+            </summary>
+            <param name="configDirectory">The directory containing the configuration file.</param>
+            <param name="configFileName">The name of the configuration file (default: "ofiq_config.jaxn").</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when the engine is already initialized.</exception>
+            <exception cref="T:OFIQ.Core.Exceptions.OFIQException">Thrown when initialization fails.</exception>
+        </member>
+        <member name="M:OFIQ.OFIQEngine.AssessQuality(System.String)">
+            <summary>
+            Assesses the quality of a facial image from a file.
+            </summary>
+            <param name="imagePath">The path to the image file.</param>
+            <returns>The quality assessment results.</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the engine is not initialized.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the image path is invalid.</exception>
+            <exception cref="T:OFIQ.Core.Exceptions.OFIQException">Thrown when quality assessment fails.</exception>
+        </member>
+        <member name="M:OFIQ.OFIQEngine.AssessQuality(System.Drawing.Bitmap)">
+            <summary>
+            Assesses the quality of a facial image from a <see cref="T:System.Drawing.Bitmap"/>.
+            </summary>
+            <param name="image">The image to assess.</param>
+            <returns>The quality assessment results.</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the engine is not initialized.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown when the image is null.</exception>
+            <exception cref="T:OFIQ.Core.Exceptions.OFIQException">Thrown when quality assessment fails.</exception>
+        </member>
+        <member name="M:OFIQ.OFIQEngine.GetVersion">
+            <summary>
+            Gets the version of the OFIQ native library.
+            </summary>
+            <returns>The version string.</returns>
+        </member>
+        <member name="M:OFIQ.OFIQEngine.Dispose">
+            <summary>
+            Releases all resources used by the OFIQ engine.
+            </summary>
+        </member>
+    </members>
+</doc>

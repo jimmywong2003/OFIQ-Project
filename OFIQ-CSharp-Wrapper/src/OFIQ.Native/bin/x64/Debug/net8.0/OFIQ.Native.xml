@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OFIQ.Native</name>
+    </assembly>
+    <members>
+        <member name="T:OFIQ.Native.Interop.OFIQNative">
+            <summary>
+            Provides P/Invoke declarations for the OFIQ native library.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Native.Interop.OFIQNative.Initialize(System.String,System.String)">
+            <summary>
+            Initializes the OFIQ library with the specified configuration.
+            </summary>
+            <param name="configDir">The directory containing the configuration file.</param>
+            <param name="configFile">The name of the configuration file.</param>
+            <returns>A return status indicating success or failure.</returns>
+        </member>
+        <member name="M:OFIQ.Native.Interop.OFIQNative.AssessQuality(System.IntPtr,System.Int32,System.Int32,System.Int32,OFIQ.Native.Interop.FaceImageQualityAssessment@)">
+            <summary>
+            Assesses the quality of a facial image.
+            </summary>
+            <param name="imageData">Pointer to the image data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="channels">The number of color channels (3 for RGB, 1 for grayscale).</param>
+            <param name="assessment">Output parameter for the quality assessment results.</param>
+            <returns>A return status indicating success or failure.</returns>
+        </member>
+        <member name="M:OFIQ.Native.Interop.OFIQNative.AssessQualityWithPreprocessing(System.IntPtr,System.Int32,System.Int32,System.Int32,OFIQ.Native.Interop.FaceImageQualityAssessment@,OFIQ.Native.Interop.FaceImageQualityPreprocessing@)">
+            <summary>
+            Assesses the quality of a facial image with preprocessing results.
+            </summary>
+            <param name="imageData">Pointer to the image data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="channels">The number of color channels.</param>
+            <param name="assessment">Output parameter for the quality assessment results.</param>
+            <param name="preprocessing">Output parameter for the preprocessing results.</param>
+            <returns>A return status indicating success or failure.</returns>
+        </member>
+        <member name="M:OFIQ.Native.Interop.OFIQNative.Cleanup">
+            <summary>
+            Releases resources associated with the OFIQ library.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Native.Interop.OFIQNative.GetVersion(System.IntPtr,System.Int32)">
+            <summary>
+            Gets the version information of the OFIQ library.
+            </summary>
+            <param name="versionBuffer">Buffer to store the version string.</param>
+            <param name="bufferSize">Size of the version buffer.</param>
+            <returns>The length of the version string, or -1 if the buffer is too small.</returns>
+        </member>
+        <member name="T:OFIQ.Native.Interop.ReturnStatus">
+            <summary>
+            Represents the return status from native OFIQ functions.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnStatus.Code">
+            <summary>
+            The return code.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnStatus.ErrorMessage">
+            <summary>
+            An optional error message.
+            </summary>
+        </member>
+        <member name="T:OFIQ.Native.Interop.ReturnCode">
+            <summary>
+            Represents the return codes from native OFIQ functions.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnCode.Success">
+            <summary>
+            Operation completed successfully.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnCode.Error">
+            <summary>
+            Operation failed.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnCode.InvalidParameter">
+            <summary>
+            Invalid parameter provided.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnCode.OutOfMemory">
+            <summary>
+            Memory allocation failed.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnCode.ConfigurationError">
+            <summary>
+            Configuration error.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.ReturnCode.UnsupportedImageFormat">
+            <summary>
+            Image format not supported.
+            </summary>
+        </member>
+        <member name="T:OFIQ.Native.Interop.FaceImageQualityAssessment">
+            <summary>
+            Represents the quality assessment results for a facial image.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityAssessment.MeasureCount">
+            <summary>
+            The number of quality measures in the results.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityAssessment.Measures">
+            <summary>
+            Pointer to the array of quality measure results.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityAssessment.OverallQuality">
+            <summary>
+            The overall quality score (0-100).
+            </summary>
+        </member>
+        <member name="T:OFIQ.Native.Interop.FaceImageQualityPreprocessing">
+            <summary>
+            Represents the preprocessing results for a facial image.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityPreprocessing.FaceCount">
+            <summary>
+            The number of detected faces.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityPreprocessing.FaceBoundingBoxes">
+            <summary>
+            Pointer to the array of face bounding boxes.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityPreprocessing.LandmarkCount">
+            <summary>
+            The number of landmarks detected.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityPreprocessing.Landmarks">
+            <summary>
+            Pointer to the array of landmark points.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceImageQualityPreprocessing.HeadPose">
+            <summary>
+            The head pose angles (yaw, pitch, roll).
+            </summary>
+        </member>
+        <member name="T:OFIQ.Native.Interop.HeadPoseAngles">
+            <summary>
+            Represents head pose angles in degrees.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.HeadPoseAngles.Yaw">
+            <summary>
+            Yaw angle (left-right rotation).
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.HeadPoseAngles.Pitch">
+            <summary>
+            Pitch angle (up-down rotation).
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.HeadPoseAngles.Roll">
+            <summary>
+            Roll angle (tilt rotation).
+            </summary>
+        </member>
+        <member name="T:OFIQ.Native.Interop.FaceBoundingBox">
+            <summary>
+            Represents a bounding box for a detected face.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceBoundingBox.X">
+            <summary>
+            X coordinate of the top-left corner.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceBoundingBox.Y">
+            <summary>
+            Y coordinate of the top-left corner.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceBoundingBox.Width">
+            <summary>
+            Width of the bounding box.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceBoundingBox.Height">
+            <summary>
+            Height of the bounding box.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.FaceBoundingBox.Confidence">
+            <summary>
+            Confidence score of the detection.
+            </summary>
+        </member>
+        <member name="T:OFIQ.Native.Interop.NativeQualityMeasureResult">
+            <summary>
+            Represents a single quality measure result.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.NativeQualityMeasureResult.MeasureId">
+            <summary>
+            The quality measure identifier.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.NativeQualityMeasureResult.RawScore">
+            <summary>
+            The native quality score.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.NativeQualityMeasureResult.QualityValue">
+            <summary>
+            The quality component value (0-100).
+            </summary>
+        </member>
+        <member name="F:OFIQ.Native.Interop.NativeQualityMeasureResult.ReturnCode">
+            <summary>
+            The return code for this measure.
+            </summary>
+        </member>
+    </members>
+</doc>

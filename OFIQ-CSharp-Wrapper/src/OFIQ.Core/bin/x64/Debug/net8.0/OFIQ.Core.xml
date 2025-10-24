@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OFIQ.Core</name>
+    </assembly>
+    <members>
+        <member name="T:OFIQ.Core.Exceptions.OFIQException">
+            <summary>
+            Represents errors that occur during OFIQ operations.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.OFIQException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.OFIQException"/> class.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.OFIQException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.OFIQException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.OFIQException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.OFIQException"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:OFIQ.Core.Exceptions.ConfigurationException">
+            <summary>
+            Represents errors that occur during OFIQ configuration operations.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.ConfigurationException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.ConfigurationException"/> class.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.ConfigurationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.ConfigurationException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.ConfigurationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.ConfigurationException"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:OFIQ.Core.Exceptions.ImageLoadException">
+            <summary>
+            Represents errors that occur during image loading operations.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.ImageLoadException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.ImageLoadException"/> class.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.ImageLoadException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.ImageLoadException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:OFIQ.Core.Exceptions.ImageLoadException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OFIQ.Core.Exceptions.ImageLoadException"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:OFIQ.Core.QualityMeasures.QualityMeasure">
+            <summary>
+            Represents the quality measures defined in ISO/IEC 29794-5 standard.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.UnifiedQualityScore">
+            <summary>
+            Unified quality score measure (0x41)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.BackgroundUniformity">
+            <summary>
+            Background uniformity measure (0x42)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.IlluminationUniformity">
+            <summary>
+            Illumination uniformity measure (0x43)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.LuminanceMean">
+            <summary>
+            Luminance mean measure (0x44)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.LuminanceVariance">
+            <summary>
+            Luminance variance measure (0x45)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.UnderExposurePrevention">
+            <summary>
+            Under-exposure prevention measure (0x46)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.OverExposurePrevention">
+            <summary>
+            Over-exposure prevention measure (0x47)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.DynamicRange">
+            <summary>
+            Dynamic range measure (0x48)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.Sharpness">
+            <summary>
+            Sharpness measure (0x49)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.NoCompressionArtifacts">
+            <summary>
+            Absence of compression artifacts measure (0x4A)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.NaturalColour">
+            <summary>
+            Natural colour measure (0x4B)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.SingleFacePresent">
+            <summary>
+            Single face present measure (0x4C)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.EyesOpen">
+            <summary>
+            Eyes open measure (0x4D)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.MouthClosed">
+            <summary>
+            Mouth closed measure (0x4E)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.EyesVisible">
+            <summary>
+            Eyes visible measure (0x4F)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.MouthOcclusionPrevention">
+            <summary>
+            Mouth occlusion prevention measure (0x50)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.FaceOcclusionPrevention">
+            <summary>
+            Face occlusion prevention measure (0x51)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.InterEyeDistance">
+            <summary>
+            Inter-eye distance measure (0x52)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.HeadSize">
+            <summary>
+            Head size measure (0x53)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.LeftwardCropOfTheFaceImage">
+            <summary>
+            Leftward crop of the face image measure (0x54)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.RightwardCropOfTheFaceImage">
+            <summary>
+            Rightward crop of the face image measure (0x55)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.MarginAboveOfTheFaceImage">
+            <summary>
+            Margin above of the face image measure (0x56)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.MarginBelowOfTheFaceImage">
+            <summary>
+            Margin below of the face image measure (0x57)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.PoseAngleYawFrontalAlignment">
+            <summary>
+            Pose angle yaw frontal alignment measure (0x58)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.PoseAnglePitchFrontalAlignment">
+            <summary>
+            Pose angle pitch frontal alignment measure (0x59)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.PoseAngleRollFrontalAlignment">
+            <summary>
+            Pose angle roll frontal alignment measure (0x5A)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.ExpressionNeutrality">
+            <summary>
+            Expression neutrality measure (0x5B)
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.QualityMeasures.QualityMeasure.NoHeadCoverings">
+            <summary>
+            Absence of head coverings measure (0x5C)
+            </summary>
+        </member>
+        <member name="T:OFIQ.Core.Types.FaceImageQualityAssessment">
+            <summary>
+            Represents the complete quality assessment results for a facial image.
+            </summary>
+            <param name="QualityMeasures">The collection of individual quality measure results.</param>
+            <param name="OverallQuality">The overall quality score (0-100).</param>
+        </member>
+        <member name="M:OFIQ.Core.Types.FaceImageQualityAssessment.#ctor(System.Collections.Generic.IReadOnlyList{OFIQ.Core.Types.QualityMeasureResult},System.Double)">
+            <summary>
+            Represents the complete quality assessment results for a facial image.
+            </summary>
+            <param name="QualityMeasures">The collection of individual quality measure results.</param>
+            <param name="OverallQuality">The overall quality score (0-100).</param>
+        </member>
+        <member name="P:OFIQ.Core.Types.FaceImageQualityAssessment.QualityMeasures">
+            <summary>The collection of individual quality measure results.</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.FaceImageQualityAssessment.OverallQuality">
+            <summary>The overall quality score (0-100).</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.FaceImageQualityAssessment.HasMeasures">
+            <summary>
+            Gets a value indicating whether the assessment contains any quality measures.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Types.FaceImageQualityAssessment.GetMeasureResult(OFIQ.Core.QualityMeasures.QualityMeasure)">
+            <summary>
+            Gets the quality measure result for the specified measure.
+            </summary>
+            <param name="measure">The quality measure to retrieve.</param>
+            <returns>The quality measure result, or null if not found.</returns>
+        </member>
+        <member name="M:OFIQ.Core.Types.FaceImageQualityAssessment.GetSuccessfulMeasures">
+            <summary>
+            Gets all successful quality measure results.
+            </summary>
+            <returns>A collection of successful quality measure results.</returns>
+        </member>
+        <member name="M:OFIQ.Core.Types.FaceImageQualityAssessment.GetFailedMeasures">
+            <summary>
+            Gets all failed quality measure results.
+            </summary>
+            <returns>A collection of failed quality measure results.</returns>
+        </member>
+        <member name="M:OFIQ.Core.Types.FaceImageQualityAssessment.GetSummary">
+            <summary>
+            Gets a summary of the quality assessment.
+            </summary>
+            <returns>A summary string.</returns>
+        </member>
+        <member name="T:OFIQ.Core.Types.LandmarkPoint">
+            <summary>
+            Represents a 2D point with X and Y coordinates.
+            </summary>
+            <param name="X">The X coordinate of the point.</param>
+            <param name="Y">The Y coordinate of the point.</param>
+        </member>
+        <member name="M:OFIQ.Core.Types.LandmarkPoint.#ctor(System.Double,System.Double)">
+            <summary>
+            Represents a 2D point with X and Y coordinates.
+            </summary>
+            <param name="X">The X coordinate of the point.</param>
+            <param name="Y">The Y coordinate of the point.</param>
+        </member>
+        <member name="P:OFIQ.Core.Types.LandmarkPoint.X">
+            <summary>The X coordinate of the point.</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.LandmarkPoint.Y">
+            <summary>The Y coordinate of the point.</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.LandmarkPoint.IsValid">
+            <summary>
+            Gets a value indicating whether this point is valid (non-negative coordinates).
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.Types.LandmarkPoint.Invalid">
+            <summary>
+            Represents an invalid landmark point.
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Types.LandmarkPoint.DistanceTo(OFIQ.Core.Types.LandmarkPoint)">
+            <summary>
+            Calculates the Euclidean distance between two points.
+            </summary>
+            <param name="other">The other point to calculate distance to.</param>
+            <returns>The Euclidean distance between the two points.</returns>
+        </member>
+        <member name="M:OFIQ.Core.Types.LandmarkPoint.Add(System.Double,System.Double)">
+            <summary>
+            Creates a new point by adding the specified offsets.
+            </summary>
+            <param name="dx">The X offset to add.</param>
+            <param name="dy">The Y offset to add.</param>
+            <returns>A new point with the added offsets.</returns>
+        </member>
+        <member name="M:OFIQ.Core.Types.LandmarkPoint.Scale(System.Double)">
+            <summary>
+            Creates a new point by scaling the coordinates.
+            </summary>
+            <param name="scale">The scale factor to apply.</param>
+            <returns>A new point with scaled coordinates.</returns>
+        </member>
+        <member name="T:OFIQ.Core.Types.QualityMeasureResult">
+            <summary>
+            Represents the result of a quality measure assessment.
+            </summary>
+            <param name="Measure">The quality measure that was assessed.</param>
+            <param name="RawScore">The native quality score computed by the measure.</param>
+            <param name="QualityValue">The quality component value (0-100).</param>
+            <param name="ReturnCode">The return code indicating the success or failure of the assessment.</param>
+        </member>
+        <member name="M:OFIQ.Core.Types.QualityMeasureResult.#ctor(OFIQ.Core.QualityMeasures.QualityMeasure,System.Double,System.Double,OFIQ.Core.Types.QualityMeasureReturnCode)">
+            <summary>
+            Represents the result of a quality measure assessment.
+            </summary>
+            <param name="Measure">The quality measure that was assessed.</param>
+            <param name="RawScore">The native quality score computed by the measure.</param>
+            <param name="QualityValue">The quality component value (0-100).</param>
+            <param name="ReturnCode">The return code indicating the success or failure of the assessment.</param>
+        </member>
+        <member name="P:OFIQ.Core.Types.QualityMeasureResult.Measure">
+            <summary>The quality measure that was assessed.</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.QualityMeasureResult.RawScore">
+            <summary>The native quality score computed by the measure.</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.QualityMeasureResult.QualityValue">
+            <summary>The quality component value (0-100).</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.QualityMeasureResult.ReturnCode">
+            <summary>The return code indicating the success or failure of the assessment.</summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.QualityMeasureResult.IsSuccess">
+            <summary>
+            Gets a value indicating whether the quality measure was successfully computed.
+            </summary>
+        </member>
+        <member name="P:OFIQ.Core.Types.QualityMeasureResult.IsValidQualityValue">
+            <summary>
+            Gets a value indicating whether the quality value is within the valid range (0-100).
+            </summary>
+        </member>
+        <member name="M:OFIQ.Core.Types.QualityMeasureResult.Success(OFIQ.Core.QualityMeasures.QualityMeasure,System.Double,System.Double)">
+            <summary>
+            Creates a successful quality measure result.
+            </summary>
+            <param name="measure">The quality measure.</param>
+            <param name="rawScore">The native quality score.</param>
+            <param name="qualityValue">The quality component value.</param>
+            <returns>A successful quality measure result.</returns>
+        </member>
+        <member name="M:OFIQ.Core.Types.QualityMeasureResult.Failure(OFIQ.Core.QualityMeasures.QualityMeasure,OFIQ.Core.Types.QualityMeasureReturnCode)">
+            <summary>
+            Creates a failed quality measure result.
+            </summary>
+            <param name="measure">The quality measure.</param>
+            <param name="returnCode">The failure return code.</param>
+            <returns>A failed quality measure result.</returns>
+        </member>
+        <member name="T:OFIQ.Core.Types.QualityMeasureReturnCode">
+            <summary>
+            Represents the return codes for quality measure assessments.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.Types.QualityMeasureReturnCode.Success">
+            <summary>
+            The quality measure was successfully computed.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.Types.QualityMeasureReturnCode.FailureToAssess">
+            <summary>
+            The quality measure could not be assessed due to insufficient data.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.Types.QualityMeasureReturnCode.InternalError">
+            <summary>
+            The quality measure computation failed due to an internal error.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.Types.QualityMeasureReturnCode.NotImplemented">
+            <summary>
+            The quality measure is not implemented.
+            </summary>
+        </member>
+        <member name="F:OFIQ.Core.Types.QualityMeasureReturnCode.NotConfigured">
+            <summary>
+            The quality measure is not configured.
+            </summary>
+        </member>
+    </members>
+</doc>

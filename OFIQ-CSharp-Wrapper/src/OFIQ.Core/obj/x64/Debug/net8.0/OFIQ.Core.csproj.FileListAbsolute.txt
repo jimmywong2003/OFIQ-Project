@@ -1,0 +1,15 @@
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\bin\x64\Debug\net8.0\OFIQ.Core.deps.json
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\bin\x64\Debug\net8.0\OFIQ.Core.dll
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\bin\x64\Debug\net8.0\OFIQ.Core.pdb
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\bin\x64\Debug\net8.0\OFIQ.Core.xml
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.csproj.AssemblyReference.cache
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.AssemblyInfoInputs.cache
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.AssemblyInfo.cs
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.csproj.CoreCompileInputs.cache
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.sourcelink.json
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.dll
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\refint\OFIQ.Core.dll
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.xml
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\OFIQ.Core.pdb
+C:\git\UareUFacialModule\OFIQ-Project\OFIQ-CSharp-Wrapper\src\OFIQ.Core\obj\x64\Debug\net8.0\ref\OFIQ.Core.dll
