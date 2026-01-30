@@ -111,3 +111,6 @@ endif(DOWNLOAD_MODELS_AND_IMAGES)
 include(CTest)
 enable_testing()
 add_subdirectory(testing)
+
+# ICAO Compliance Checker Application
+add_subdirectory(icao_compliance_checker)

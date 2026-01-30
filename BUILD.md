@@ -554,6 +554,93 @@ have been successfully tested by the OFIQ development team.
 </table>
 OFIQ may compile on other configurations that have not been tested by the OFIQ development team. Compilation for 32-bit Linux systems, however, were not successful due to the onnxruntime being not supported by 32-bit gcc compiler. Also, compilation on Windows using gcc (for 32- nor 64-bit) did not work since onnxruntime did not build.
 
+# ICAO Compliance Checker
+
+OFIQ includes an ICAO 9303 compliance checker application that evaluates facial images against ICAO standards. The application computes 28 quality measures and compares them against configurable thresholds to determine compliance.
+
+## Building the ICAO Compliance Checker
+
+The ICAO compliance checker can be built using the provided build scripts:
+
+### Windows
+```cmd
+cd C:\Path\To\OFIQ-Project\scripts\
+build_icao_checker.cmd
+```
+
+### Linux/MacOS
+```bash
+cd /path/to/OFIQ-Project/scripts/
+sh build_icao_checker.sh
+```
+
+Alternatively, you can build it directly using CMake:
+```bash
+cd build
+cmake --build . --config Release --target icao_compliance_checker
+```
+
+## Running the ICAO Compliance Checker
+
+The ICAO compliance checker has the following usage pattern:
+
+```bash
+icao_compliance_checker -i <image_path> [-c <config_dir>] [-t <thresholds_file>] [-o <output_file>]
+```
+
+### Arguments
+<table>
+ <tr>
+  <td><b>flag</b></td>
+  <td><b>description</b></td>
+ </tr>
+ <tr>
+  <td>-i, --image</td>
+  <td>Path to input image (required)</td>
+ </tr>
+ <tr>
+  <td>-c, --config-dir</td>
+  <td>Directory containing OFIQ configuration (default: current directory)</td>
+ </tr>
+ <tr>
+  <td>-t, --thresholds</td>
+  <td>Path to ICAO compliance thresholds file (default: icao_compliance_config.json)</td>
+ </tr>
+ <tr>
+  <td>-o, --output</td>
+  <td>Path to output JSON file (default: stdout)</td>
+ </tr>
+</table>
+
+### Example Usage
+
+```bash
+# Check a single image for ICAO compliance
+./icao_compliance_checker -i test.jpg -c data -t icao_compliance_config.json -o result.json
+
+# Using default thresholds file in current directory
+./icao_compliance_checker -i data/tests/images/c-01-frontal.png -c data
+```
+
+### Output Format
+
+The application outputs a JSON file containing:
+- Image processing metadata
+- Face detection and landmark information
+- Quality measure scores (raw and scalar 0-100)
+- ICAO compliance status for each measure
+- Overall compliance summary
+
+### Configuration Files
+
+1. **OFIQ Configuration** (`ofiq_config.jaxn`): Standard OFIQ configuration file containing model paths and measure parameters.
+
+2. **ICAO Compliance Thresholds** (`icao_compliance_config.json`): JSON file defining minimum and maximum thresholds for each of the 28 quality measures. Default thresholds are provided in `icao_compliance_checker/config/icao_compliance_config.json`.
+
+## Design Documentation
+
+For detailed design information about the ICAO compliance checker, see [design_console_demo.md](design_console_demo.md).
+
 # Precompiled binaries
 
 Pre-compiled library binaries are available from [eu-LISA](https://resources.eulisa.europa.eu/research/OFIQ-PrecompiledBinaries.zip).

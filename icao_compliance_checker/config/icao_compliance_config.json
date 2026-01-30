@@ -1,0 +1,150 @@
+{
+    "icao_compliance_thresholds": {
+        "UnifiedQualityScore": {
+            "min": 50,
+            "max": 100,
+            "description": "Overall quality score threshold"
+        },
+        "BackgroundUniformity": {
+            "min": 70,
+            "max": 100,
+            "description": "Background should be uniform"
+        },
+        "IlluminationUniformity": {
+            "min": 60,
+            "max": 100,
+            "description": "Illumination should be uniform across face"
+        },
+        "LuminanceMean": {
+            "min": 40,
+            "max": 80,
+            "description": "Average luminance level"
+        },
+        "LuminanceVariance": {
+            "min": 0,
+            "max": 30,
+            "description": "Luminance variance should be low"
+        },
+        "UnderExposurePrevention": {
+            "min": 60,
+            "max": 100,
+            "description": "Prevent under-exposed images"
+        },
+        "OverExposurePrevention": {
+            "min": 60,
+            "max": 100,
+            "description": "Prevent over-exposed images"
+        },
+        "DynamicRange": {
+            "min": 50,
+            "max": 100,
+            "description": "Adequate dynamic range"
+        },
+        "Sharpness": {
+            "min": 60,
+            "max": 100,
+            "description": "Image should be sharp"
+        },
+        "CompressionArtifacts": {
+            "min": 70,
+            "max": 100,
+            "description": "Minimal compression artifacts"
+        },
+        "NaturalColour": {
+            "min": 60,
+            "max": 100,
+            "description": "Natural skin color reproduction"
+        },
+        "SingleFacePresent": {
+            "min": 90,
+            "max": 100,
+            "description": "Only one face should be present"
+        },
+        "EyesOpen": {
+            "min": 80,
+            "max": 100,
+            "description": "Eyes should be open"
+        },
+        "MouthClosed": {
+            "min": 80,
+            "max": 100,
+            "description": "Mouth should be closed"
+        },
+        "EyesVisible": {
+            "min": 90,
+            "max": 100,
+            "description": "Eyes should be visible (not occluded)"
+        },
+        "MouthOcclusionPrevention": {
+            "min": 90,
+            "max": 100,
+            "description": "Mouth should not be occluded"
+        },
+        "FaceOcclusionPrevention": {
+            "min": 90,
+            "max": 100,
+            "description": "Face should not be occluded"
+        },
+        "InterEyeDistance": {
+            "min": 70,
+            "max": 100,
+            "description": "Adequate inter-eye distance"
+        },
+        "HeadSize": {
+            "min": 60,
+            "max": 100,
+            "description": "Appropriate head size in image"
+        },
+        "LeftwardCropOfTheFaceImage": {
+            "min": 80,
+            "max": 100,
+            "description": "Adequate left margin"
+        },
+        "RightwardCropOfTheFaceImage": {
+            "min": 80,
+            "max": 100,
+            "description": "Adequate right margin"
+        },
+        "MarginAboveOfTheFaceImage": {
+            "min": 80,
+            "max": 100,
+            "description": "Adequate margin above head"
+        },
+        "MarginBelowOfTheFaceImage": {
+            "min": 80,
+            "max": 100,
+            "description": "Adequate margin below chin"
+        },
+        "HeadPoseYaw": {
+            "min": 70,
+            "max": 100,
+            "description": "Head yaw (left-right rotation) within limits"
+        },
+        "HeadPosePitch": {
+            "min": 70,
+            "max": 100,
+            "description": "Head pitch (up-down tilt) within limits"
+        },
+        "HeadPoseRoll": {
+            "min": 70,
+            "max": 100,
+            "description": "Head roll (tilt) within limits"
+        },
+        "ExpressionNeutrality": {
+            "min": 70,
+            "max": 100,
+            "description": "Neutral facial expression"
+        },
+        "NoHeadCoverings": {
+            "min": 90,
+            "max": 100,
+            "description": "No head coverings (hats, etc.)"
+        }
+    },
+    "version": "1.0",
+    "notes": "ICAO 9303 compliance thresholds. These values are examples and should be validated against actual ICAO standards.",
+    "defaults": {
+        "min_threshold": 50,
+        "max_threshold": 100
+    }
+}
